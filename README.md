@@ -1,4 +1,4 @@
-# millennialplyr 🥑 🍞 <img src="inst/figures/sticker.png" align="right" height="120" alt="avocado toast in millennial pink" />
+# millennialplyr 😂 👏 💯 🙏 <img src="inst/figures/sticker.png" align="right" height="120" alt="avocado toast in millennial pink" />
 
 <!-- badges: start -->
 <!-- badges: end -->
