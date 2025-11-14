@@ -29,17 +29,17 @@ mood <- function(.data, ...) {
   select(.data, ...)
 }
 
-#' glow_up
+#' level_up
 #'
-#' Give your columns a glow up! (mutate equivalent)
+#' Level up your columns. (mutate equivalent)
 #'
 #' @param .data A data frame or tibble
 #' @param ... Name-value pairs of expressions
 #' @return A data frame with new/modified columns
 #' @export
 #' @examples
-#' mtcars |> glow_up(mpg_squared = mpg^2, high_hp = hp > 150)
-glow_up <- function(.data, ...) {
+#' mtcars |> level_up(mpg_squared = mpg^2, high_hp = hp > 150)
+level_up <- function(.data, ...) {
   mutate(.data, ...)
 }
 
