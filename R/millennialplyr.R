@@ -2,7 +2,7 @@
 NULL
 
 #' sick
-#' 
+#'
 #' Filter out the sketchy rows! (filter equivalent)
 #'
 #' @param .data A data frame or tibble
@@ -16,7 +16,7 @@ thats_sick <- function(.data, ...) {
 }
 
 #' mood
-#' 
+#'
 #' What columns are you in the mood for? (select equivalent)
 #'
 #' @param .data A data frame or tibble
@@ -96,19 +96,6 @@ FOMO <- function(.data, ...) {
 #' mtcars |> FOMO(cyl) |> shook()
 shook <- function(.data) {
   ungroup(.data)
-}
-
-
-#' epic_fail
-#'
-#' Couldn't have been worse (failwith equivalent)
-#'
-#' @param .data A data frame or tibble
-#' @param ... Name-value pairs (new_name = old_name)
-#' @return A data frame with renamed columns
-#' @export
-epic_fail <- function(default = NULL, f, quiet = FALSE) {
-  failwith(default = NULL, f, quiet = FALSE)
 }
 
 #' literally
@@ -195,7 +182,7 @@ all_that <- function(.data, ...) {
 #' df2 <- data.frame(id = c(2, 3, 4), score = c(90, 85, 88))
 #' df1 |> for_real(df2, by = "id")
 #' @export
-for_real <- function(x, y, ...) { 
+for_real <- function(x, y, ...) {
   left_join(x, y, ...)
 }
 
@@ -221,7 +208,7 @@ adulting <- function(x, y, ...) {
 #' @param by Columns to join by
 #' @return A merged data frame
 #' @export
-#' 
+#'
 tight <- function(x, y, ...) {
   inner_join(x, y, ...)
 }
@@ -264,12 +251,24 @@ cringe <- function(x, y, ...) {
 
 #' humblebrag
 #'
-#' Ugh, your problem is so complex that you need everyone to know about it (create_progress_bar equivalent)
+#' More info than we needed to be honest (explain equivalent)
 #'
-#' @param .data A grouped data frame
-#' @return An ungrouped data frame
+#' @param x An object to explain
+#' @param ... Other parameters possibly used by generic
+#' @return The first argument, invisibly
 #' @export
-humblebrag <- function(name = "none", ...) {
-  create_progress_bar(name = "none", ...)
+humblebrag <- function(x, ...) {
+  explain(x, ...)
 }
 
+#' epic_fail
+#'
+#' Well that didn't work (na_if equivalent)
+#'
+#' @param x Vector to modify
+#' @param y Value or vector to compare against. When x and y are equal, the value in x will be replaced with NA.
+#' @return A modified version of x that replaces any values that are equal to y with NA.
+#' @export
+epic_fail <- function(x, y) {
+  na_if(x, y)
+}

@@ -4,16 +4,16 @@
 \alias{epic_fail}
 \title{epic_fail}
 \usage{
-epic_fail(default = NULL, f, quiet = FALSE)
+epic_fail(x, y)
 }
 \arguments{
-\item{.data}{A data frame or tibble}
+\item{x}{Vector to modify}
 
-\item{...}{Name-value pairs (new_name = old_name)}
+\item{y}{Value or vector to compare against. When x and y are equal, the value in x will be replaced with NA.}
 }
 \value{
-A data frame with renamed columns
+A modified version of x that replaces any values that are equal to y with NA.
 }
 \description{
-Couldn't have been worse (failwith equivalent)
+Well that didn't work (na_if equivalent)
 }

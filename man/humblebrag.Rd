@@ -4,14 +4,16 @@
 \alias{humblebrag}
 \title{humblebrag}
 \usage{
-humblebrag(name = "none", ...)
+humblebrag(x, ...)
 }
 \arguments{
-\item{.data}{A grouped data frame}
+\item{x}{An object to explain}
+
+\item{...}{Other parameters possibly used by generic}
 }
 \value{
-An ungrouped data frame
+The first argument, invisibly
 }
 \description{
-Ugh, your problem is so complex that you need everyone to know about it (create_progress_bar equivalent)
+More info than we needed to be honest (explain equivalent)
 }
