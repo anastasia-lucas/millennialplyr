@@ -7,7 +7,7 @@
 
 ## What is this?
 
-`millennialplyr` is an alternative syntax for `dplyr` that replaces sane function names with Millennial & 00s slang. Inspired by [genzplyr](https://hadley.github.io/genzplyr/) and [boomerplyr](https://github.com/bradlindblad/boomerplyr)
+`millennialplyr` is an alternative syntax for `dplyr` that replaces sane function names with millennial & 00s slang. Inspired by [genzplyr](https://hadley.github.io/genzplyr/) and [boomerplyr](https://github.com/bradlindblad/boomerplyr)
 
 
 ## Installation
