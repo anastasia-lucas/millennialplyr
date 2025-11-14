@@ -17,17 +17,17 @@ devtools::install_github("anastasia-lucas/millennialplyr")
 
 ## Translation guide
 
-| **dplyr verb** | **boomerplyr verb**       | **Meaning** |
+| **dplyr verb** | **millennialplyr verb**       | **Meaning** |
 |----------------|--------------------------|--------------|
 | `filter()`     | `thats_sick()`           | Your data will be sick after filtering out those sketchy rows. |
-| `select()`     | `mood()`                 | Let's face it, you're not in the mood to deal with all those columns. |
-| `mutate()`     | `glow_up()`              | Give those beat columns a glow up. |
+| `select()`     | `mood()`                 | Let's face it, you're only in the mood for some columns. |
+| `mutate()`     | `level_up()`             | Level up your beat columns. |
 | `summarise()`  | `tldr()`                 | Too long; didn't read. Just give me the summary. |
 | `arrange()`    | `GOAT()`                 | Find out who the G.O.A.T. of your data is. |
 | `group_by()`   | `FOMO()`                 | Got to get together with the gang so you don't miss out! |
 | `ungroup()`    | `shook()`                | When you need to disrupt the status quo. |
 | `rename()`     | `literally()`            | It's literally a different column name. |
-| `distinct()`   | `YOLO()`                 | If YOLO then your data only get one row to themselves, too. |
+| `distinct()`   | `YOLO()`                 | If YOLO then so do your data. |
 | `pull()`       | `THIS()`                 | That one column that gets it right. |
 | `slice_head()` | `sup()`                  | What's up with your data? Just the first few rows is enough. |
 | `count()`      | `all_that()`             | Get the counts and see if your data is all that. |
@@ -37,5 +37,6 @@ devtools::install_github("anastasia-lucas/millennialplyr")
 | `full_join()`  | `thirsty()`              | Going after everything is a little desperate. |
 | `anti_join()`  | `sike()`                 | jk we didn't want to join after all! |
 | `semi_join()`  | `cringe()`               | Just like high school, if you don't fit in you're out of the clique. |
+| `coalesce()`   | `quiet_quit()`           | Let your other col~leagues~umns do the work. |
 | `na_if()`      | `epic_fail()`            | When you can't call it a win. |
 | `explain()`    | `humblebrag()`           | We get it, you're better than `str()`. |
