@@ -249,6 +249,22 @@ cringe <- function(x, y, ...) {
   semi_join(x, y, ...)
 }
 
+
+#' quiet_quit
+#'
+#' Let the other columns do the work (coalesce equivalent)
+#'
+#' @param ... One or more vectors.
+#' @param .ptype  An optional prototype declaring the desired output type.
+#' @param .size An optional size declaring the desired output size.
+#' @return A data frame with matching rows
+#' @export
+#' @examples
+#' y <- c(1, 2, NA, NA, 5); z <- c(NA, NA, 3, 4, 5); quiet_quit(y, z)
+quiet_quit <- function(..., .ptype = NULL, .size = NULL) {
+  coalesce(..., .ptype = NULL, .size = NULL)
+}
+
 #' humblebrag
 #'
 #' More info than we needed to be honest (explain equivalent)
