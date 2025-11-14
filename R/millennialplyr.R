@@ -12,7 +12,7 @@ NULL
 #' @examples
 #' mtcars |> thats_sick(mpg > 20, cyl == 4)
 thats_sick <- function(.data, ...) {
-  filter(.data, !(...))
+  filter(.data, (...))
 }
 
 #' mood
