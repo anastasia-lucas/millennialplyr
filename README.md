@@ -37,5 +37,5 @@ devtools::install_github("anastasia-lucas/millennialplyr")
 | `full_join()`  | `thirsty()`              | Going after everything is a little desperate. |
 | `anti_join()`  | `sike()`                 | jk we didn't want to join after all! |
 | `semi_join()`  | `cringe()`               | Just like high school, if you don't fit in you're out of the clique. |
-| `failwith()`   | `epic_fail()`            | When you can't call it a win. |
-| `create_progress_bar()` | `humblebrag()`   | When your task is so hard, but your code is so efficient. |
+| `na_if()`      | `epic_fail()`            | When you can't call it a win. |
+| `explain()`    | `humblebrag()`           | We get it, you're better than `str()`. |
